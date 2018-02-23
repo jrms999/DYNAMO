@@ -1,0 +1,304 @@
+@font-face {
+	font-family: 'HeliosCond';
+	src: url('../fonts/subset-HeliosCond-Bold.eot');
+	src: url('../fonts/subset-HeliosCond-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/subset-HeliosCond-Bold.woff2') format('woff2'),
+		 url('../fonts/subset-HeliosCond-Bold.woff') format('woff'),
+		 url('../fonts/subset-HeliosCond-Bold.ttf') format('truetype'),
+		 url('../fonts/subset-HeliosCond-Bold.svg#HeliosCond-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('../fonts/subset-DINPro-Bold.eot');
+	src: url('../fonts/subset-DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/subset-DINPro-Bold.woff2') format('woff2'),
+		 url('../fonts/subset-DINPro-Bold.woff') format('woff'),
+		 url('../fonts/subset-DINPro-Bold.ttf') format('truetype'),
+		 url('../fonts/subset-DINPro-Bold.svg#DINPro-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/*== fitting-block ========================================*/
+
+.fitting-block {
+	position: absolute;
+	right: 0; top: 0;
+	width: 480px;
+	height: 360px;
+	background: #f2f2f2;
+	padding: 20px 0;
+}
+
+.fitting-title {
+	padding: 0 20px;
+	color: #808080;
+	font-size: 13px;
+	/*margin-bottom: 20px;*/
+	margin-bottom: 10px;
+	line-height: 20px;
+    font-weight: 300;
+}
+
+.fitting-title span {
+	display: block;
+	color: #000;
+	font-weight: 700;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.fitting-box {
+	float: left;
+	width: 50%;
+	padding: 0 20px;
+}
+
+.fitting-tshirt-list, .good-tshirt-list{
+	height: 260px;
+	position: relative;
+   margin-left: 0;
+}
+
+.good-tshirt-list{
+	height: auto;
+}
+
+.fitting-tshirt-list li, .good-tshirt-list li.pane{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0; top: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.good-tshirt-list li.pane{
+	position: relative;
+}
+
+.fitting-tshirt-list li.active, .good-tshirt-list li.pane.active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.tshirt-image {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.select-tshirt-list li {
+	width: 50px;
+	height: 50px;
+	border: 1px solid #f2f2f2;
+	float: left;
+	margin-right: 10px;
+	border-radius: 2px;
+	cursor: pointer;
+	position: relative;
+	transition: border 0.3s ease;
+}
+
+.select-tshirt-list li.active {
+	border: 1px solid #d9d9d9;
+}
+
+.select-tshirt-list li:hover {
+	border: 1px solid #1e7dea;
+}
+
+.select-tshirt-image {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 48px;
+	height: 48px;
+}
+
+.select-tshirt-image img {
+	vertical-align: bottom;
+	height: 40px;
+}
+
+
+/*== fitting-select-size ========================================*/
+
+.fitting-select-size {
+	margin: 20px -5px 20px -5px;
+}
+
+.fitting-select-size.nomar {
+	margin: 0 -5px;
+}
+
+/* KOCMOC */
+/*.select-size-item {
+	width: 32px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 2px;
+	text-transform: uppercase;
+	color: #333333;
+	float: left;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px 5px;
+	cursor: pointer;
+	transition: all 0.1s ease;
+    font-weight: 900;
+}*/
+
+.select-size-item {
+	min-width: 32px;
+	min-height: 24px;
+	line-height: 24px;
+	text-align: center;
+	border-radius: 2px;
+	text-transform: uppercase;
+	color: #333333;
+	float: left;
+	font-size: 12px;
+	background: #fff;
+	margin: 0px 5px;
+	cursor: pointer;
+	transition: all 0.1s ease;
+    font-weight: 900;
+	padding: 4px;
+	/*// margin-bottom: 10px;*/
+	margin-bottom: 10px;
+}
+
+
+
+.select-size-item > input[type=checkbox] {
+	display:none;
+}
+.select-size-item > input[type=radio] {
+	display:none;
+}
+
+.select-size-item.active {
+	background: #1e7dea;
+	color: #fff;
+}
+
+/*== tshirt-name ========================================*/
+
+.tshirt-name {
+	position: absolute;
+	width: 100%;
+	top: 40px;
+}
+
+.tshirt-name span {
+	width: 140px;
+	margin: 0 auto;
+	display: block;
+	overflow: hidden;
+	text-align: center;
+	font-size: 20px;
+	line-height: 1;
+	/*color: #fff;*/
+	text-transform: uppercase;
+	font-family: 'HeliosCond';
+	/*font-size: 28px;*/
+	/*font-family: 'bebasneue'*/
+}
+
+/*== text-name-block ========================================*/
+
+.text-name-block {
+	position: relative;
+	padding-right: 42px;
+}
+
+.text-name {
+	float: left;
+	width: 100%;
+	margin-right: 10px;
+}
+
+.text-number {
+	float: left;
+	width: 32px;
+	margin-right: -42px;
+}
+
+.text-name-title {
+	display: block;
+	font-size: 13px;
+	color: #808080;
+	margin-bottom: 3px;
+    font-weight: 300;
+}
+
+.text-name-title strong {
+	font-weight: 500;
+}
+
+.text-name-input {
+	color: #000;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+
+.text-number-input {
+	padding: 0 5px;
+	text-align: center;
+	font-size: 14px;
+}
+
+/*== tshirt-value ========================================*/
+
+.tshirt-value {
+	position: absolute;
+	width: 100%;
+	left: 0; top: 65px;
+	text-align: center;
+}
+
+.tshirt-value span {
+	/*color: #fff;*/
+	font-weight: 800;
+	display: block;
+	line-height: 1;
+	font-family: 'DIN Pro';
+    font-size: 54px;
+	/*font-size: 60px;*/
+}
+/*== select-box ========================================*/
+
+
+.select-box-text {
+	display: block;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 28px;
+	color: #808080;
+}
+.fitting-box-bottom .buy-button {
+	float: right;
+}
+
+.fitting-box-bottom .current-cena {
+	float: left;
+	line-height: 28px;
+}
+.current-cena {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+}
+
+.fitting-box .text-name-block {
+	margin-top: 10px;
+}
+.fitting-box .text-name-block .select-box{
+	margin-bottom: 5px;
+}

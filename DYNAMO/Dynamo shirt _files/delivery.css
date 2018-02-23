@@ -1,0 +1,139 @@
+/*== delivery ========================================*/
+
+.delivery-block {
+	padding-left: 240px;
+	position: relative;
+  margin-bottom: 18px;
+}
+.delivery-block.cdelivery-block {
+  margin-bottom: 0px;
+}
+.delivery-map {
+	height: 420px;
+	position: relative;
+}
+
+.delivery-list-block {
+	position: absolute;
+	left: -1px; top: 0;
+	width: 241px;
+	height: 100%;
+}
+
+.jdelivery-box {
+	position: relative;
+	padding-bottom: 30px;
+	max-height: 420px;
+	overflow: hidden;
+}
+
+.jdelivery {
+	position: relative;
+	overflow: hidden;
+	padding-top: 1px;
+}
+
+.jdelivery > ul {
+	/*height: 20000em;*/
+	position: relative;
+  margin-left: 0;
+  margin-bottom: 0px;
+}
+
+.jdelivery-info{
+  margin-left: 0;
+}
+
+.jdelivery-item {
+	position: relative;
+	border: 1px solid #e6e6e6;
+	padding: 13px 18px;
+	cursor: pointer;
+	margin-top: -1px;
+	transition: all 0.2s ease;
+}
+
+.jdelivery-item:hover/*,
+.jdelivery-item.active */{
+	border: 1px solid #1e7dea;
+	box-shadow: 0 0 10px rgba(0,2,4,.1);
+	z-index: 2;
+}
+
+.jdelivery-name {
+	height: 20px;
+	line-height: 20px;
+}
+
+.jdelivery-name .value {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	border-radius: 10px;
+	background: #cecece;
+	text-align: center;
+	color: #fff;
+	margin-right: 10px;
+	font-size: 12px;
+	transition: all 0.2s ease;
+}
+
+.jdelivery-item:hover .value,
+.jdelivery-item.active .value {
+	background: #1e7dea;
+	color: #fff;
+}
+
+.jdelivery-name .name {
+	color: #1e7dea;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-bottom: 1px dotted #1e7dea;
+	transition: all 0.2s ease;
+}
+
+.jdelivery-item:hover .name {
+	color: #000;
+	border-bottom: 1px dotted #000;
+}
+
+.jdelivery-item.active .name {
+	color: #000;
+	border-bottom: 1px dotted transparent;
+}
+
+.jdelivery-info li {
+	margin-top: 5px;
+	color: #808080;
+	font-size: 13px;
+	line-height: 20px;
+    font-weight: 300;
+}
+
+a.jdelivery-next {
+	border: 1px solid #e6e6e6;
+	background: #f2f2f2;
+	position: absolute;
+	left: 0; bottom: 0;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	font-family: 'fdinamo';
+	line-height: 28px;
+	color: #CDCDCD;
+	font-size: 18px;
+	z-index: 5;
+	text-decoration: none;
+}
+
+a.jdelivery-next:hover {
+	text-decoration: none;
+    color: #1e7dea;
+}
+.showmap {
+  background: url('../img/showmap.png') no-repeat;
+  padding: 3px 0 3px 30px;
+  color: #1e7de9;
+  font-size: 16px;
+  font-weight: 500;
+}
